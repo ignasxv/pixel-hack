@@ -1,50 +1,35 @@
-# React + TypeScript + Vite
+# Pixel-Hack: The Art of Pixelized Repurposing
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Pixel-Hack** is a fun project that transforms discarded second-hand chopsticks into a vibrant pixelated sculpture using advanced image processing and custom algorithms. This project merges sustainability with creative technology, offering a unique approach to recycling through art.
 
-Currently, two official plugins are available:
+## Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project began with the goal of turning waste into art by repurposing chopsticks. Using color quantization techniques, we reduced a digital image to six distinct colors. We then implemented a **circle packing algorithm** to efficiently place over 5,200 chopstick pieces, each acting as a "pixel" in the final sculpture. Custom algorithms calculated the exact number of pieces needed for each color, ensuring minimal waste and precise execution.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Recycled Materials**: Over 5,200 second-hand chopsticks were collected, cleaned, and repurposed.
+- **Color Quantization**: Reduced the original image to six colors for efficient material usage.
+- **Custom Algorithms**: Implemented to calculate and pack chopsticks into a cohesive pixelated structure.
+- **Sustainability**: This project emphasizes sustainable art by upcycling waste materials.
+  
+## Tech Stack
 
-- Configure the top-level `parserOptions` property like this:
+- **Python**: For image processing and custom algorithm development.
+- **Circle Packing Algorithm**: For optimal arrangement of chopsticks.
+- **Physical Assembly**: Using recycled chopsticks as pixels in the final artwork.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## How to Run
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. Clone this repository:
+   ```
+   git clone https://github.com/username/algosticks
+   ```
+2. Install dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
+3. Run the image processing and layout generation:
+   ```
+   python algosticks.py
+   ```
